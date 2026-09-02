@@ -827,7 +827,7 @@
                   <tr><td>Classwork</td><td>2.5%</td></tr>
                   <tr><td>Homework</td><td>2.5%</td></tr>
                   <tr><td>Quizzes</td><td>10.0%</td></tr>
-                  <tr><td>Mid-Term Test</td><td>10.0%</td></tr>
+                  <tr><td>Test</td><td>10.0%</td></tr>
                   <tr class="font-bold bg-slate-100"><td>Quarter Total</td><td>25.0%</td></tr>
                 </tbody>
               </table>
@@ -861,8 +861,7 @@
                   <tr><td>Homework</td><td>3.0%</td></tr>
                   <tr><td>Quiz</td><td>5.0%</td></tr>
                   <tr><td>Mid-Term Test</td><td>6.0%</td></tr>
-                  <tr><td>Final Examination</td><td>10.0%</td></tr>
-                  <tr class="font-bold bg-slate-100"><td>Quarter Total</td><td>30.0%</td></tr>
+                  <tr class="font-bold bg-slate-100"><td>Quarter Total</td><td>20.0%</td></tr>
                 </tbody>
               </table>
             </div>
@@ -895,8 +894,7 @@
                   <tr><td>Classwork</td><td>6.0%</td></tr>
                   <tr><td>Homework</td><td>4.0%</td></tr>
                   <tr><td>Mid-Term Test</td><td>10.0%</td></tr>
-                  <tr><td>Final Examination</td><td>10.0%</td></tr>
-                  <tr class="font-bold bg-slate-100"><td>Quarter Total</td><td>30.0%</td></tr>
+                  <tr class="font-bold bg-slate-100"><td>Quarter Total</td><td>20.0%</td></tr>
                 </tbody>
               </table>
             </div>
@@ -907,13 +905,14 @@
                 <tbody>
                   <tr><td>Classwork</td><td>6.0%</td></tr>
                   <tr><td>Homework</td><td>4.0%</td></tr>
-                  <tr><td>Mid-Term Test</td><td>10.0%</td></tr>
+                  <tr><td>Quiz</td><td>10.0%</td></tr>
                   <tr><td>Final Examination</td><td>10.0%</td></tr>
                   <tr class="font-bold bg-slate-100"><td>Quarter Total</td><td>30.0%</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
+          <p class="text-xs text-slate-500 mt-2">Applies to English and all subjects except ISA and Social Sciences. Assessments reflect Cambridge and Pearson objectives — analytical thinking, application of knowledge, extended responses, and examination readiness.</p>
         </div>
 
         <!-- Tab Panel: Grades 9-12 US -->
@@ -928,9 +927,7 @@
                   <tr><td>Classwork</td><td>6.0%</td></tr>
                   <tr><td>Homework</td><td>4.0%</td></tr>
                   <tr><td>Mid-Term Test</td><td>10.0%</td></tr>
-                  <tr><td>Project / Performance Task</td><td>5.0%</td></tr>
-                  <tr><td>Final Examination</td><td>10.0%</td></tr>
-                  <tr class="font-bold bg-slate-100"><td>Quarter Total</td><td>35.0%</td></tr>
+                  <tr class="font-bold bg-slate-100"><td>Quarter Total</td><td>20.0%</td></tr>
                 </tbody>
               </table>
             </div>
@@ -942,12 +939,14 @@
                   <tr><td>Classwork</td><td>6.0%</td></tr>
                   <tr><td>Homework</td><td>3.0%</td></tr>
                   <tr><td>Quiz</td><td>6.0%</td></tr>
+                  <tr><td>Project / Performance Task</td><td>5.0%</td></tr>
                   <tr><td>Final Examination</td><td>10.0%</td></tr>
-                  <tr class="font-bold bg-slate-100"><td>Quarter Total</td><td>25.0%</td></tr>
+                  <tr class="font-bold bg-slate-100"><td>Quarter Total</td><td>30.0%</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
+          <p class="text-xs text-slate-500 mt-2">Applies to Arabic, English, Math, Sciences and AP Psychology. Assessment aligns with CCSS and NGSS — critical thinking, inquiry, application, and college readiness.</p>
         </div>
       </div>
 
@@ -959,7 +958,7 @@
         </div>
         <p class="text-xs text-slate-600 mb-4">Enter percentage scores (% earned) for each category to calculate the weighted quarter percentage for Grades 4–8 (Q1/Q3):</p>
         
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-4 text-xs">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4 text-xs">
           <div>
             <label class="block font-semibold mb-1">Classwork (6% max)</label>
             <input type="number" id="calcCW" min="0" max="100" value="90" oninput="calculateQuarterGrade()" class="w-full p-2 border border-slate-300 rounded-lg">
@@ -973,18 +972,14 @@
             <input type="number" id="calcQuiz" min="0" max="100" value="85" oninput="calculateQuarterGrade()" class="w-full p-2 border border-slate-300 rounded-lg">
           </div>
           <div>
-            <label class="block font-semibold mb-1">Mid-Term (6% max)</label>
+            <label class="block font-semibold mb-1">Mid-Term Test (6% max)</label>
             <input type="number" id="calcMid" min="0" max="100" value="88" oninput="calculateQuarterGrade()" class="w-full p-2 border border-slate-300 rounded-lg">
-          </div>
-          <div>
-            <label class="block font-semibold mb-1">Final Exam (10% max)</label>
-            <input type="number" id="calcFinal" min="0" max="100" value="92" oninput="calculateQuarterGrade()" class="w-full p-2 border border-slate-300 rounded-lg">
           </div>
         </div>
 
         <div class="flex items-center justify-between bg-navy-950 text-white p-3 rounded-lg text-sm">
           <span>Calculated Total Quarter Score:</span>
-          <span class="font-mono font-bold text-gold text-lg" id="calcResult">26.85 / 30.00 (89.5%)</span>
+          <span class="font-mono font-bold text-gold text-lg" id="calcResult">17.90 / 20.00 (89.5%)</span>
         </div>
       </div>
 
@@ -1686,13 +1681,12 @@
     const hw = parseFloat(document.getElementById('calcHW').value) || 0;
     const quiz = parseFloat(document.getElementById('calcQuiz').value) || 0;
     const mid = parseFloat(document.getElementById('calcMid').value) || 0;
-    const finalEx = parseFloat(document.getElementById('calcFinal').value) || 0;
 
-    // Grades 4-8 Weightings: CW 6%, HW 3%, Quiz 5%, Mid 6%, Final 10% = Total 30%
-    const totalScore = (cw * 0.06) + (hw * 0.03) + (quiz * 0.05) + (mid * 0.06) + (finalEx * 0.10);
-    const percentage = ((totalScore / 30.0) * 100).toFixed(1);
+    // Grades 4-8 Q1/Q3 Weightings: CW 6%, HW 3%, Quiz 5%, Mid-Term Test 6% = Total 20%
+    const totalScore = (cw * 0.06) + (hw * 0.03) + (quiz * 0.05) + (mid * 0.06);
+    const percentage = ((totalScore / 20.0) * 100).toFixed(1);
 
-    document.getElementById('calcResult').textContent = `${totalScore.toFixed(2)} / 30.00 (${percentage}%)`;
+    document.getElementById('calcResult').textContent = `${totalScore.toFixed(2)} / 20.00 (${percentage}%)`;
   }
 
   // Interactive Formative Rubric Score Selection
